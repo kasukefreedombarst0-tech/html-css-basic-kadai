@@ -1,0 +1,89 @@
+#div p, h1, main :nth-child(n){
+  margin: 0;
+}
+ 
+#p,a {
+  font-size: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(244, 79, 79);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+main {
+    margin: 10px ;
+}
+
+#parset{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.contents {
+	border: solid 3px rgb(238, 204, 204);
+	flex-basis: 25%;
+	padding: 10px 15px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+
+h2{
+    font-size: 25px;
+    text-decoration: 3px underline dotted rgb(236, 122, 122);
+  }
+
+.contents p:nth-of-type(2)::first-letter{
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+  }
+
+.contents img{
+    width: 70%;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(244, 79, 79);
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+a:visited{
+    color: rgb(193, 234, 251);
+}
+
+a:hover{
+    color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width: 768px) {
+
+  h2{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 25px;
+  }
+
+  #parset {
+    flex-direction: column;
+    align-items: center;
+  }  
+} 
+  
